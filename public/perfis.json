@@ -1,0 +1,1040 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Silva",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedora Front-End Sênior",
+    "resumo": "Especialista em React e TypeScript com 8 anos de experiência em desenvolvimento web",
+    "localizacao": "São Paulo/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "TypeScript", "Tailwind CSS", "Next.js", "JavaScript"],
+    "softSkills": ["Comunicação", "Liderança", "Criatividade", "Resiliência"],
+    "experiencias": [
+      {
+        "empresa": "Tech Solutions Brasil",
+        "cargo": "Desenvolvedora Front-End Sênior",
+        "inicio": "2022-01",
+        "fim": "2024-12",
+        "descricao": "Liderança de projetos frontend, mentoria de juniors e arquitetura de componentes"
+      },
+      {
+        "empresa": "Digital Innovations",
+        "cargo": "Desenvolvedora Front-End Pleno",
+        "inicio": "2019-06",
+        "fim": "2021-12",
+        "descricao": "Desenvolvimento de aplicações web responsivas e otimizadas"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Ciência da Computação",
+        "instituicao": "USP",
+        "ano": 2016
+      },
+      {
+        "curso": "Especialização em Desenvolvimento Web",
+        "instituicao": "FIAP",
+        "ano": 2018
+      }
+    ],
+    "projetos": [
+      {
+        "titulo": "Plataforma de E-commerce",
+        "link": "https://github.com/anasilva/ecommerce",
+        "descricao": "Aplicação completa de e-commerce com React e Node.js"
+      }
+    ],
+    "certificacoes": ["AWS Certified Cloud Practitioner", "React Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["IA Ética", "Educação Tecnológica", "Desenvolvimento Sustentável"]
+  },
+  {
+    "id": 2,
+    "nome": "Bruno Costa",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Engenheiro de Software Full-Stack",
+    "resumo": "Especialista em arquitetura de sistemas distribuídos e microserviços",
+    "localizacao": "Rio de Janeiro/RJ",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Node.js", "Python", "Docker", "Kubernetes", "PostgreSQL"],
+    "softSkills": ["Pensamento Crítico", "Colaboração", "Resolução de Problemas", "Adaptabilidade"],
+    "experiencias": [
+      {
+        "empresa": "Cloud Systems Inc",
+        "cargo": "Engenheiro de Software Sênior",
+        "inicio": "2021-03",
+        "fim": "2024-12",
+        "descricao": "Arquitetura e implementação de sistemas em cloud"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Mestrado em Engenharia de Software",
+        "instituicao": "PUC-Rio",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Kubernetes Administrator", "AWS Solutions Architect"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Cloud Computing", "DevOps", "Segurança da Informação"]
+  },
+  {
+    "id": 3,
+    "nome": "Carla Dias",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Gerente de Projetos",
+    "resumo": "Profissional experiente em gestão ágil e liderança de equipes multidisciplinares",
+    "localizacao": "Belo Horizonte/MG",
+    "area": "Gestão",
+    "habilidadesTecnicas": ["Agile", "Scrum", "Jira", "Confluence", "Excel"],
+    "softSkills": ["Liderança", "Comunicação", "Negociação", "Empatia"],
+    "experiencias": [
+      {
+        "empresa": "Project Management Pro",
+        "cargo": "Gerente de Projetos Sênior",
+        "inicio": "2020-05",
+        "fim": "2024-12",
+        "descricao": "Gestão de projetos de grande escala com orçamentos acima de 1M"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "MBA em Gestão de Projetos",
+        "instituicao": "FGV",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["PMP - Project Management Professional", "Scrum Master Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Liderança Transformacional", "Inovação", "Desenvolvimento Organizacional"]
+  },
+  {
+    "id": 4,
+    "nome": "Daniel Alves",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Cientista de Dados",
+    "resumo": "Especialista em machine learning e análise de grandes volumes de dados",
+    "localizacao": "Curitiba/PR",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "R", "SQL", "TensorFlow", "Pandas"],
+    "softSkills": ["Análise Crítica", "Comunicação de Dados", "Criatividade", "Atenção ao Detalhe"],
+    "experiencias": [
+      {
+        "empresa": "Data Analytics Corp",
+        "cargo": "Cientista de Dados Sênior",
+        "inicio": "2019-08",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de modelos de ML para previsão de demanda"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Mestrado em Ciência de Dados",
+        "instituicao": "UNICAMP",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google Cloud Professional Data Engineer", "AWS Machine Learning Specialty"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["IA Ética", "Big Data", "Análise Preditiva"]
+  },
+  {
+    "id": 5,
+    "nome": "Elisa Ferreira",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Cibersegurança",
+    "resumo": "Profissional dedicada à proteção de infraestruturas críticas e dados sensíveis",
+    "localizacao": "Brasília/DF",
+    "area": "Segurança",
+    "habilidadesTecnicas": ["Penetration Testing", "Firewall", "Criptografia", "SIEM", "Linux"],
+    "softSkills": ["Vigilância", "Pensamento Estratégico", "Comunicação Técnica", "Resiliência"],
+    "experiencias": [
+      {
+        "empresa": "CyberSecurity Solutions",
+        "cargo": "Especialista em Cibersegurança",
+        "inicio": "2018-02",
+        "fim": "2024-12",
+        "descricao": "Implementação de políticas de segurança e resposta a incidentes"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Segurança da Informação",
+        "instituicao": "FIAP",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["CISSP", "CEH - Certified Ethical Hacker"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Segurança em Cloud", "Compliance", "Proteção de Dados"]
+  },
+  {
+    "id": 6,
+    "nome": "Heitor Gomes",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "DevOps Engineer",
+    "resumo": "Especialista em automação de infraestrutura e CI/CD",
+    "localizacao": "Salvador/BA",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS"],
+    "softSkills": ["Resolução de Problemas", "Atenção ao Detalhe", "Colaboração", "Aprendizado Contínuo"],
+    "experiencias": [
+      {
+        "empresa": "Infrastructure Pro",
+        "cargo": "DevOps Engineer Sênior",
+        "inicio": "2020-01",
+        "fim": "2024-12",
+        "descricao": "Implementação de pipelines CI/CD e orquestração de containers"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em DevOps",
+        "instituicao": "Linux Academy",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Kubernetes Administrator", "AWS DevOps Engineer Professional"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Automação", "Cloud Native", "Observabilidade"]
+  },
+  {
+    "id": 7,
+    "nome": "Isabella Morreira",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Designer de Produto",
+    "resumo": "Especialista em design centrado no usuário e prototipagem",
+    "localizacao": "São Paulo/SP",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Adobe XD", "Prototyping", "User Research", "Wireframing"],
+    "softSkills": ["Criatividade", "Empatia", "Comunicação Visual", "Pensamento Crítico"],
+    "experiencias": [
+      {
+        "empresa": "Creative Design Studio",
+        "cargo": "Designer de Produto Sênior",
+        "inicio": "2019-03",
+        "fim": "2024-12",
+        "descricao": "Design de interfaces para aplicações mobile e web"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Design",
+        "instituicao": "Faap",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google UX Design Certificate", "Interaction Design Specialist"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Design Inclusivo", "UX Research", "Design de Experiência"]
+  },
+  {
+    "id": 8,
+    "nome": "João Santos",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Backend",
+    "resumo": "Especialista em APIs REST e bancos de dados relacionais",
+    "localizacao": "Recife/PE",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Java", "Spring Boot", "PostgreSQL", "MongoDB", "REST API"],
+    "softSkills": ["Lógica de Programação", "Atenção ao Detalhe", "Colaboração", "Documentação"],
+    "experiencias": [
+      {
+        "empresa": "Backend Solutions",
+        "cargo": "Desenvolvedor Backend Pleno",
+        "inicio": "2018-06",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de APIs robustas e escaláveis"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Sistemas de Informação",
+        "instituicao": "UFPE",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Oracle Java Programmer", "Spring Professional Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Microserviços", "Escalabilidade", "Performance"]
+  },
+  {
+    "id": 9,
+    "nome": "Karina Lima",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "QA Engineer",
+    "resumo": "Especialista em testes automatizados e garantia de qualidade",
+    "localizacao": "Fortaleza/CE",
+    "area": "Qualidade",
+    "habilidadesTecnicas": ["Selenium", "Jest", "Cypress", "Python", "SQL"],
+    "softSkills": ["Atenção ao Detalhe", "Pensamento Crítico", "Comunicação", "Paciência"],
+    "experiencias": [
+      {
+        "empresa": "Quality Assurance Pro",
+        "cargo": "QA Engineer Sênior",
+        "inicio": "2017-09",
+        "fim": "2024-12",
+        "descricao": "Implementação de estratégias de testes e automação"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Engenharia de Software",
+        "instituicao": "UFC",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["ISTQB Certified Tester", "Selenium Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Testes de Performance", "Automação", "Qualidade de Software"]
+  },
+  {
+    "id": 10,
+    "nome": "Lucas Oliveira",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Arquiteto de Software",
+    "resumo": "Especialista em design de arquiteturas escaláveis e resilientes",
+    "localizacao": "Manaus/AM",
+    "area": "Arquitetura",
+    "habilidadesTecnicas": ["System Design", "Cloud Architecture", "Microservices", "Docker", "AWS"],
+    "softSkills": ["Visão Estratégica", "Liderança Técnica", "Comunicação", "Inovação"],
+    "experiencias": [
+      {
+        "empresa": "Architecture Experts",
+        "cargo": "Arquiteto de Software",
+        "inicio": "2016-01",
+        "fim": "2024-12",
+        "descricao": "Design de arquiteturas para sistemas de grande escala"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Mestrado em Engenharia de Software",
+        "instituicao": "INPA",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["AWS Solutions Architect Professional", "TOGAF 9"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Cloud Native", "Event-Driven Architecture", "Escalabilidade"]
+  },
+  {
+    "id": 11,
+    "nome": "Mariana Costa",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Product Manager",
+    "resumo": "Profissional experiente em estratégia de produto e roadmap",
+    "localizacao": "Porto Alegre/RS",
+    "area": "Produto",
+    "habilidadesTecnicas": ["Product Strategy", "Analytics", "User Research", "Roadmapping", "SQL"],
+    "softSkills": ["Visão Estratégica", "Comunicação", "Liderança", "Negociação"],
+    "experiencias": [
+      {
+        "empresa": "Product Innovation Labs",
+        "cargo": "Senior Product Manager",
+        "inicio": "2018-04",
+        "fim": "2024-12",
+        "descricao": "Gestão de roadmap e estratégia de produto"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "MBA em Gestão de Produto",
+        "instituicao": "PUCRS",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Reforge Product Strategy", "Pragmatic Marketing Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Product-Market Fit", "Growth Hacking", "User Experience"]
+  },
+  {
+    "id": 12,
+    "nome": "Nicolas Pereira",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Mobile",
+    "resumo": "Desenvolvedor especializado em aplicações iOS e Android",
+    "localizacao": "Goiânia/GO",
+    "area": "Desenvolvimento Mobile",
+    "habilidadesTecnicas": ["Swift", "Kotlin", "React Native", "Flutter", "Firebase"],
+    "softSkills": ["Criatividade", "Resolução de Problemas", "Atenção ao Detalhe", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "Mobile First Studio",
+        "cargo": "Mobile Developer Sênior",
+        "inicio": "2017-07",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de aplicações mobile nativas e híbridas"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Engenharia de Computação",
+        "instituicao": "UFG",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Apple Developer Certification", "Google Android Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["App Performance", "User Experience Mobile", "Novas Tecnologias"]
+  },
+  {
+    "id": 13,
+    "nome": "Olivia Martins",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "UX/UI Designer",
+    "resumo": "Especialista em design de interfaces intuitivas e acessíveis",
+    "localizacao": "Brasília/DF",
+    "area": "Design",
+    "habilidadesTecnicas": ["Figma", "Prototyping", "Accessibility", "User Testing", "Design Systems"],
+    "softSkills": ["Criatividade", "Empatia", "Comunicação", "Pensamento Design"],
+    "experiencias": [
+      {
+        "empresa": "Design Excellence",
+        "cargo": "UX/UI Designer Sênior",
+        "inicio": "2018-05",
+        "fim": "2024-12",
+        "descricao": "Design de interfaces para produtos digitais"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Design Digital",
+        "instituicao": "UnB",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google UX Design Certificate", "Interaction Design Specialist"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Design Inclusivo", "Accessibility", "Design Systems"]
+  },
+  {
+    "id": 14,
+    "nome": "Paulo Ribeiro",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Full-Stack",
+    "resumo": "Profissional versátil com experiência em frontend e backend",
+    "localizacao": "Campinas/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["React", "Node.js", "MongoDB", "GraphQL", "Docker"],
+    "softSkills": ["Adaptabilidade", "Comunicação", "Resolução de Problemas", "Aprendizado Rápido"],
+    "experiencias": [
+      {
+        "empresa": "Full Stack Solutions",
+        "cargo": "Full-Stack Developer Pleno",
+        "inicio": "2019-02",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de aplicações web completas"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bootcamp Full-Stack",
+        "instituicao": "Ironhack",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["MERN Stack Certification", "GraphQL Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Web Performance", "Arquitetura de Software", "DevOps"]
+  },
+  {
+    "id": 15,
+    "nome": "Rafaela Souza",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Analista de Dados",
+    "resumo": "Especialista em análise exploratória e visualização de dados",
+    "localizacao": "Vitória/ES",
+    "area": "Dados",
+    "habilidadesTecnicas": ["Python", "Tableau", "Power BI", "SQL", "Excel"],
+    "softSkills": ["Análise Crítica", "Comunicação de Dados", "Atenção ao Detalhe", "Criatividade"],
+    "experiencias": [
+      {
+        "empresa": "Data Insights Corp",
+        "cargo": "Data Analyst Sênior",
+        "inicio": "2018-08",
+        "fim": "2024-12",
+        "descricao": "Análise de dados e geração de insights para tomada de decisão"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Estatística",
+        "instituicao": "UFES",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Tableau Desktop Specialist", "Google Data Analytics Certificate"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Business Intelligence", "Data Visualization", "Análise Preditiva"]
+  },
+  {
+    "id": 16,
+    "nome": "Samuel Ferreira",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Cloud",
+    "resumo": "Profissional experiente em migração e otimização de cloud",
+    "localizacao": "Natal/RN",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["AWS", "Azure", "GCP", "Terraform", "CloudFormation"],
+    "softSkills": ["Pensamento Estratégico", "Resolução de Problemas", "Comunicação", "Liderança"],
+    "experiencias": [
+      {
+        "empresa": "Cloud Migration Experts",
+        "cargo": "Cloud Solutions Architect",
+        "inicio": "2016-03",
+        "fim": "2024-12",
+        "descricao": "Arquitetura e migração de sistemas para cloud"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Cloud Computing",
+        "instituicao": "AWS Training",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["AWS Solutions Architect Professional", "Azure Administrator Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Cloud Security", "Cost Optimization", "Disaster Recovery"]
+  },
+  {
+    "id": 17,
+    "nome": "Tania Gomes",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Scrum Master",
+    "resumo": "Facilitadora de equipes ágeis e transformação organizacional",
+    "localizacao": "Belém/PA",
+    "area": "Agile",
+    "habilidadesTecnicas": ["Scrum", "Kanban", "Jira", "Confluence", "Agile Coaching"],
+    "softSkills": ["Facilitação", "Empatia", "Comunicação", "Resolução de Conflitos"],
+    "experiencias": [
+      {
+        "empresa": "Agile Transformation Co",
+        "cargo": "Scrum Master Sênior",
+        "inicio": "2017-11",
+        "fim": "2024-12",
+        "descricao": "Facilitação de equipes ágeis e coaching em metodologias"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação Scrum Master",
+        "instituicao": "Scrum Alliance",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Certified Scrum Master", "SAFe Agilist"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Transformação Ágil", "Liderança Servil", "Cultura Organizacional"]
+  },
+  {
+    "id": 18,
+    "nome": "Ulisses Martins",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Python",
+    "resumo": "Especialista em desenvolvimento backend com Python e automação",
+    "localizacao": "Maceió/AL",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Python", "Django", "FastAPI", "PostgreSQL", "Redis"],
+    "softSkills": ["Lógica de Programação", "Atenção ao Detalhe", "Documentação", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "Python Development Studio",
+        "cargo": "Python Developer Sênior",
+        "inicio": "2017-04",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de aplicações backend robustas"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Ciência da Computação",
+        "instituicao": "UFAL",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Python Professional Certification", "Django Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Automação", "Web Scraping", "Data Processing"]
+  },
+  {
+    "id": 19,
+    "nome": "Vanessa Lima",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Business Analyst",
+    "resumo": "Profissional especializada em análise de requisitos e documentação",
+    "localizacao": "João Pessoa/PB",
+    "area": "Análise",
+    "habilidadesTecnicas": ["Requirements Analysis", "UML", "SQL", "Excel", "Visio"],
+    "softSkills": ["Comunicação", "Análise Crítica", "Documentação", "Negociação"],
+    "experiencias": [
+      {
+        "empresa": "Business Solutions Inc",
+        "cargo": "Business Analyst Sênior",
+        "inicio": "2016-06",
+        "fim": "2024-12",
+        "descricao": "Análise de requisitos e documentação de processos"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Análise de Sistemas",
+        "instituicao": "UFPB",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["IIBA Certified Business Analyst", "UML Professional"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Process Improvement", "Requirements Engineering", "Documentation"]
+  },
+  {
+    "id": 20,
+    "nome": "Wagner Santos",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Especialista em SEO",
+    "resumo": "Profissional experiente em otimização de mecanismos de busca",
+    "localizacao": "Teresina/PI",
+    "area": "Marketing Digital",
+    "habilidadesTecnicas": ["SEO", "SEM", "Analytics", "Google Ads", "Content Strategy"],
+    "softSkills": ["Análise de Dados", "Criatividade", "Comunicação", "Atenção ao Detalhe"],
+    "experiencias": [
+      {
+        "empresa": "Digital Marketing Pro",
+        "cargo": "SEO Specialist Sênior",
+        "inicio": "2015-09",
+        "fim": "2024-12",
+        "descricao": "Estratégia de SEO e otimização de conteúdo"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Marketing Digital",
+        "instituicao": "Google",
+        "ano": 2015
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Google Analytics Certified", "HubSpot Inbound Marketing Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["SEO Técnico", "Content Marketing", "User Experience"]
+  },
+  {
+    "id": 21,
+    "nome": "Ximena Rojas",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Gerente de RH",
+    "resumo": "Especialista em gestão de pessoas e desenvolvimento organizacional",
+    "localizacao": "Aracaju/SE",
+    "area": "Recursos Humanos",
+    "habilidadesTecnicas": ["Recrutamento", "Treinamento", "Folha de Pagamento", "HRIS", "Excel"],
+    "softSkills": ["Empatia", "Comunicação", "Liderança", "Resolução de Conflitos"],
+    "experiencias": [
+      {
+        "empresa": "HR Management Solutions",
+        "cargo": "HR Manager",
+        "inicio": "2014-01",
+        "fim": "2024-12",
+        "descricao": "Gestão de pessoas e desenvolvimento de talentos"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "MBA em Gestão de Pessoas",
+        "instituicao": "FGV",
+        "ano": 2014
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["CIPD HR Professional", "Talent Management Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Desenvolvimento de Liderança", "Cultura Organizacional", "Bem-estar"]
+  },
+  {
+    "id": 22,
+    "nome": "Yara Alves",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedora de Jogos",
+    "resumo": "Especialista em desenvolvimento de jogos 2D e 3D",
+    "localizacao": "Sorocaba/SP",
+    "area": "Desenvolvimento de Jogos",
+    "habilidadesTecnicas": ["Unity", "Unreal Engine", "C#", "C++", "Game Design"],
+    "softSkills": ["Criatividade", "Resolução de Problemas", "Atenção ao Detalhe", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "Game Studio Brasil",
+        "cargo": "Game Developer Sênior",
+        "inicio": "2016-07",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de jogos multiplataforma"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Game Design",
+        "instituicao": "FIAP",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Unity Certified Developer", "Unreal Engine Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["Game Physics", "AI em Jogos", "Otimização de Performance"]
+  },
+  {
+    "id": 23,
+    "nome": "Zelia Costa",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Testes de Segurança",
+    "resumo": "Profissional dedicada a testes de penetração e vulnerabilidades",
+    "localizacao": "Piracicaba/SP",
+    "area": "Segurança",
+    "habilidadesTecnicas": ["Penetration Testing", "Burp Suite", "Metasploit", "Python", "Linux"],
+    "softSkills": ["Pensamento Crítico", "Atenção ao Detalhe", "Comunicação Técnica", "Resiliência"],
+    "experiencias": [
+      {
+        "empresa": "Security Testing Lab",
+        "cargo": "Penetration Tester Sênior",
+        "inicio": "2017-02",
+        "fim": "2024-12",
+        "descricao": "Testes de penetração e avaliação de vulnerabilidades"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Ethical Hacking",
+        "instituicao": "EC-Council",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["CEH - Certified Ethical Hacker", "OSCP - Offensive Security Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Segurança em Aplicações", "Compliance", "Threat Intelligence"]
+  },
+  {
+    "id": 24,
+    "nome": "Adriano Mendes",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Vue.js",
+    "resumo": "Especialista em desenvolvimento frontend com Vue.js",
+    "localizacao": "Ribeirão Preto/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Vue.js", "Nuxt", "JavaScript", "Tailwind CSS", "Vuex"],
+    "softSkills": ["Criatividade", "Atenção ao Detalhe", "Colaboração", "Aprendizado Rápido"],
+    "experiencias": [
+      {
+        "empresa": "Vue Development Studio",
+        "cargo": "Vue.js Developer Pleno",
+        "inicio": "2018-03",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de aplicações web com Vue.js"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bootcamp Vue.js",
+        "instituicao": "Vue Mastery",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Vue.js Certification", "Nuxt Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Web Performance", "Component Libraries", "State Management"]
+  },
+  {
+    "id": 25,
+    "nome": "Beatriz Neves",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Acessibilidade",
+    "resumo": "Profissional dedicada a tornar aplicações web acessíveis",
+    "localizacao": "Jundiaí/SP",
+    "area": "Acessibilidade",
+    "habilidadesTecnicas": ["WCAG", "ARIA", "HTML", "CSS", "Testing Tools"],
+    "softSkills": ["Empatia", "Atenção ao Detalhe", "Comunicação", "Educação"],
+    "experiencias": [
+      {
+        "empresa": "Accessibility First",
+        "cargo": "Accessibility Specialist",
+        "inicio": "2019-05",
+        "fim": "2024-12",
+        "descricao": "Implementação de padrões de acessibilidade web"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Acessibilidade Web",
+        "instituicao": "WebAIM",
+        "ano": 2019
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["WCAG 2.1 Specialist", "Accessibility Auditor Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Inclusive Design", "Assistive Technologies", "Standards Compliance"]
+  },
+  {
+    "id": 26,
+    "nome": "Cassio Rocha",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Desenvolvedor Angular",
+    "resumo": "Especialista em desenvolvimento de aplicações enterprise com Angular",
+    "localizacao": "Santos/SP",
+    "area": "Desenvolvimento",
+    "habilidadesTecnicas": ["Angular", "TypeScript", "RxJS", "Material Design", "Testing"],
+    "softSkills": ["Lógica de Programação", "Atenção ao Detalhe", "Documentação", "Colaboração"],
+    "experiencias": [
+      {
+        "empresa": "Enterprise Solutions Corp",
+        "cargo": "Angular Developer Sênior",
+        "inicio": "2016-08",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de aplicações enterprise com Angular"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Engenharia de Software",
+        "instituicao": "Unisanta",
+        "ano": 2016
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Angular Professional Certification", "RxJS Advanced Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Reactive Programming", "State Management", "Performance Optimization"]
+  },
+  {
+    "id": 27,
+    "nome": "Denise Oliveira",
+    "foto": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    "cargo": "Gerente de Qualidade",
+    "resumo": "Profissional experiente em gestão de qualidade e processos",
+    "localizacao": "Diadema/SP",
+    "area": "Qualidade",
+    "habilidadesTecnicas": ["ISO 9001", "Six Sigma", "CMMI", "Process Improvement", "Excel"],
+    "softSkills": ["Liderança", "Comunicação", "Análise Crítica", "Resolução de Problemas"],
+    "experiencias": [
+      {
+        "empresa": "Quality Management Pro",
+        "cargo": "Quality Manager",
+        "inicio": "2013-02",
+        "fim": "2024-12",
+        "descricao": "Gestão de qualidade e melhoria contínua"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "MBA em Gestão da Qualidade",
+        "instituicao": "USP",
+        "ano": 2013
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Six Sigma Black Belt", "CMMI Certified"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Continuous Improvement", "Process Optimization", "Lean Management"]
+  },
+  {
+    "id": 28,
+    "nome": "Eduardo Ferreira",
+    "foto": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Blockchain",
+    "resumo": "Profissional especializado em desenvolvimento de aplicações blockchain",
+    "localizacao": "Osasco/SP",
+    "area": "Blockchain",
+    "habilidadesTecnicas": ["Solidity", "Ethereum", "Web3.js", "Smart Contracts", "Cryptography"],
+    "softSkills": ["Pensamento Crítico", "Resolução de Problemas", "Atenção ao Detalhe", "Inovação"],
+    "experiencias": [
+      {
+        "empresa": "Blockchain Innovations",
+        "cargo": "Blockchain Developer",
+        "inicio": "2020-01",
+        "fim": "2024-12",
+        "descricao": "Desenvolvimento de smart contracts e aplicações descentralizadas"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Blockchain",
+        "instituicao": "Ethereum Foundation",
+        "ano": 2020
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Ethereum Developer Certification", "Solidity Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Fluente" }
+    ],
+    "areaInteresses": ["DeFi", "NFTs", "Web3 Development"]
+  },
+  {
+    "id": 29,
+    "nome": "Fernanda Silva",
+    "foto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    "cargo": "Especialista em Testes de Performance",
+    "resumo": "Profissional dedicada a testes de carga e otimização",
+    "localizacao": "Guarulhos/SP",
+    "area": "Testes",
+    "habilidadesTecnicas": ["JMeter", "LoadRunner", "Gatling", "Python", "SQL"],
+    "softSkills": ["Análise Crítica", "Atenção ao Detalhe", "Comunicação", "Paciência"],
+    "experiencias": [
+      {
+        "empresa": "Performance Testing Lab",
+        "cargo": "Performance Tester Sênior",
+        "inicio": "2017-06",
+        "fim": "2024-12",
+        "descricao": "Testes de carga e otimização de performance"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em Testes de Performance",
+        "instituicao": "LoadRunner Academy",
+        "ano": 2017
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["JMeter Certification", "LoadRunner Certification"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["Performance Optimization", "Scalability Testing", "Monitoring"]
+  },
+  {
+    "id": 30,
+    "nome": "Gustavo Mendes",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    "cargo": "Especialista em API Gateway",
+    "resumo": "Profissional especializado em arquitetura de APIs e integração",
+    "localizacao": "Mauá/SP",
+    "area": "Infraestrutura",
+    "habilidadesTecnicas": ["Kong", "AWS API Gateway", "Swagger", "REST", "GraphQL"],
+    "softSkills": ["Pensamento Estratégico", "Resolução de Problemas", "Comunicação", "Documentação"],
+    "experiencias": [
+      {
+        "empresa": "API Solutions Inc",
+        "cargo": "API Architect",
+        "inicio": "2018-04",
+        "fim": "2024-12",
+        "descricao": "Design e implementação de arquiteturas de API"
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Certificação em API Design",
+        "instituicao": "API Academy",
+        "ano": 2018
+      }
+    ],
+    "projetos": [],
+    "certificacoes": ["Kong Certification", "API Design Specialist"],
+    "idiomas": [
+      { "idioma": "Português", "nivel": "Nativo" },
+      { "idioma": "Inglês", "nivel": "Avançado" }
+    ],
+    "areaInteresses": ["API Security", "API Governance", "Microservices"]
+  }
+]
