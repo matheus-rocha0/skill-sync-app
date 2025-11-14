@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import perfisData from '../public/perfis.json'; 
+import perfisData from './data/perfis.json'; 
+import { IoSearch } from "react-icons/io5";
 
 // --- ALTERADO: Importações ---
 import Header from './components/Header';
@@ -22,7 +23,10 @@ function App() {
   const [filtros, setFiltros] = useState({
     busca: '',
     area: '',
-    localizacao: ''
+    localizacao: '',
+    habilidadeTecnica: '',
+    softSkill: '',
+    nivelIngles: ''
   });
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -85,19 +89,22 @@ useEffect(() => {
     }));
   };
 
-  // --- LÓGICA DE RENDERIZAÇÃO ---
-  const backgroundClass = theme === 'dark' 
-    ? 'bg-gray-950 text-gray-100'
-    : 'bg-gray-100 text-gray-900';
-
   // 1. Lógica para Filtros Dinâmicos (Sidebar)
   const areasUnicas = [...new Set(perfis.map(p => p.area))].sort();
   const localizacoesUnicas = [...new Set(perfis.map(p => p.localizacao))].sort();
 
+  // Habilidades Técnicas únicas
+  const habilidadesTecnicasUnicas = [...new Set(perfis.flatMap(p => p.habilidadesTecnicas || []))].sort();
+  // Soft Skills únicas
+  const softSkillsUnicas = [...new Set(perfis.flatMap(p => p.softSkills || []))].sort();
+  // Níveis de inglês únicos
+  const niveisInglesUnicos = [...new Set(
+    perfis.flatMap(p => (p.idiomas || []).filter(i => i.idioma === 'Inglês').map(i => i.nivel))
+  )].sort();
+
   // 2. Lógica de Filtro (Perfis Filtrados)
   const perfisFiltrados = perfis.filter((profile) => {
     const buscaLower = filtros.busca.toLowerCase();
-    
     const matchBusca = buscaLower === '' ||
       profile.nome.toLowerCase().includes(buscaLower) ||
       profile.cargo.toLowerCase().includes(buscaLower);
@@ -105,7 +112,16 @@ useEffect(() => {
     const matchArea = filtros.area === '' || profile.area === filtros.area;
     const matchLocalizacao = filtros.localizacao === '' || profile.localizacao === filtros.localizacao;
 
-    return matchBusca && matchArea && matchLocalizacao;
+    const matchHabilidadeTecnica = filtros.habilidadeTecnica === '' ||
+      (profile.habilidadesTecnicas && profile.habilidadesTecnicas.includes(filtros.habilidadeTecnica));
+
+    const matchSoftSkill = filtros.softSkill === '' ||
+      (profile.softSkills && profile.softSkills.includes(filtros.softSkill));
+
+    const matchNivelIngles = filtros.nivelIngles === '' ||
+      (profile.idiomas && profile.idiomas.some(i => i.idioma === 'Inglês' && i.nivel === filtros.nivelIngles));
+
+    return matchBusca && matchArea && matchLocalizacao && matchHabilidadeTecnica && matchSoftSkill && matchNivelIngles;
   });
 
   // 3. --- NOVA LÓGICA DE PAGINAÇÃO ---
@@ -114,15 +130,9 @@ useEffect(() => {
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const perfisDaPagina = perfisFiltrados.slice(startIndex, endIndex);
 
-  // Classes para o input de busca
-  const inputClasses = theme === 'dark'
-    ? 'bg-gray-800 border-gray-700 text-white focus:ring-blue-500 focus:border-blue-500'
-    : 'bg-white border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500';
-
-
   // --- RETURN ATUALIZADO (NOVO LAYOUT) ---
   return (
-    <div className={`min-h-screen ${backgroundClass} transition-colors duration-200`}>
+    <div className={`min-h-screen bg-(--background) text-(--text) transition-colors duration-200`}>
       
       <Header theme={theme} setTheme={setTheme} />
 
@@ -133,27 +143,31 @@ useEffect(() => {
         <SidebarFiltros
           theme={theme}
           setFiltros={setFiltros}
-          areas={areasUnicas} 
+          areas={areasUnicas}
           localizacoes={localizacoesUnicas}
+          habilidadesTecnicas={habilidadesTecnicasUnicas}
+          softSkills={softSkillsUnicas}
+          niveisIngles={niveisInglesUnicos}
         />
 
         {/* Coluna da Direita: Conteúdo Principal */}
         <main className="flex-1">
           
-          <h2 className="text-3xl font-bold mb-2">Pool de Talentos</h2>
-          <p className={`mb-6 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
+          <h2 className="text-5xl font-black mb-2">Pool de Talentos</h2>
+          <p className={`mb-6 text-(--text2)`}>
             Encontre os melhores profissionais para sua equipe.
           </p>
 
           {/* Input de Busca (Movido para cá) */}
-          <div className="mb-6">
+          <div className="mb-6 relative">
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xl text-(--text2)"><IoSearch /></span>
             <input
               type="text"
-              name="busca" // O nome "busca" bate com o estado 'filtros'
+              name="busca"
               id="busca"
-              onChange={handleFiltroChange} // Usa o handler do App.jsx
-              className={`w-full p-3 rounded-md border ${inputClasses} transition-colors`}
-              placeholder="🔎 Buscar por cargo, habilidade ou nome..."
+              onChange={handleFiltroChange}
+              className={`w-full pl-10 p-3 rounded-lg border bg-(--container) border-(--border-color) text-(--text) focus:ring-(--primary) transition-colors`}
+              placeholder="Buscar por cargo, habilidade ou nome..."
             />
           </div>
 
