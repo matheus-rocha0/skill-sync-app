@@ -27,10 +27,8 @@ const Header = ({ theme, setTheme }) => {
     ? 'text-gray-300 hover:bg-gray-700'
     : 'text-gray-700 hover:bg-gray-200';
   
-  // 4. Lógica para a borda da foto de perfil
-  const imgBorderClasses = theme === 'dark'
-    ? 'border-gray-600'
-    : 'border-gray-300';
+  // (A lógica da borda da imagem não é mais necessária)
+  // const imgBorderClasses = ...
 
   return (
     // Usamos as variáveis de classe que definimos acima
@@ -66,11 +64,9 @@ const Header = ({ theme, setTheme }) => {
             )}
           </button>
           
-          <img 
-            src="https://via.placeholder.com/40"
-            alt="Foto do usuário" 
-            className={`w-10 h-10 rounded-full ml-4 border-2 ${imgBorderClasses}`}
-          />
+          {/* A TAG <IMG> QUE ESTAVA AQUI FOI REMOVIDA
+          */}
+          
         </div>
       </nav>
     </header>

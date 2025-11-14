@@ -15,7 +15,7 @@ const PoolTalentos = ({ perfis, theme, onCardClick }) => {
       */}
       {perfis.map((profile) => (
         <ProfileCard
-          key={profile.Id}
+          key={profile.id}
           profile={profile}
           theme={theme}
           onCardClick={onCardClick}
