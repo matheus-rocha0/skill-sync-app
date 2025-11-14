@@ -1,19 +1,15 @@
 import React from 'react';
 
-// Recebe 'theme' e 'setFiltros' do App.jsx
-const Filtros = ({ theme, setFiltros }) => {
+// Recebe 'theme', 'setFiltros', 'areas' e 'localizacoes' do App.jsx
+const Filtros = ({ theme, setFiltros, areas, localizacoes }) => {
 
-  // Lógica de classes (exemplo para um input)
   const inputClasses = theme === 'dark'
     ? 'bg-gray-800 border-gray-700 text-white focus:ring-blue-500 focus:border-blue-500'
     : 'bg-white border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500';
 
-  // Função para atualizar o estado no App.jsx
-  // Usamos 'e.target.name' para atualizar a chave correta no objeto 'filtros'
   const handleFiltroChange = (e) => {
     const { name, value } = e.target;
     
-    // Atualiza o estado no App.jsx
     setFiltros(prevFiltros => ({
       ...prevFiltros,
       [name]: value
@@ -39,7 +35,7 @@ const Filtros = ({ theme, setFiltros }) => {
           />
         </div>
 
-        {/* 2. Filtro de Área */}
+        {/* 2. Filtro de Área (Dinâmico) */}
         <div>
           <label htmlFor="area" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Filtrar por Área
@@ -51,14 +47,16 @@ const Filtros = ({ theme, setFiltros }) => {
             className={`w-full p-2 rounded-md border ${inputClasses} transition-colors`}
           >
             <option value="">Todas as Áreas</option>
-            <option value="Desenvolvimento">Desenvolvimento</option>
-            <option value="Design">Design</option>
-            <option value="Gestão">Gestão</option>
-            {/* Adicione mais opções baseadas no seu JSON */}
+            {/* Mapeia as áreas únicas recebidas por props */}
+            {areas.map((area) => (
+              <option key={area} value={area}>
+                {area}
+              </option>
+            ))}
           </select>
         </div>
 
-        {/* 3. Filtro de Localização */}
+        {/* 3. Filtro de Localização (Dinâmico) */}
         <div>
           <label htmlFor="localizacao" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Filtrar por Localização
@@ -70,9 +68,12 @@ const Filtros = ({ theme, setFiltros }) => {
             className={`w-full p-2 rounded-md border ${inputClasses} transition-colors`}
           >
             <option value="">Todas as Localidades</option>
-            <option value="São Paulo/SP">São Paulo/SP</option>
-            <option value="Rio de Janeiro/RJ">Rio de Janeiro/RJ</option>
-            {/* Adicione mais opções baseadas no seu JSON */}
+            {/* Mapeia as localizações únicas recebidas por props */}
+            {localizacoes.map((local) => (
+              <option key={local} value={local}>
+                {local}
+              </option>
+            ))}
           </select>
         </div>
 
