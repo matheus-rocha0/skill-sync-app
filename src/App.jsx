@@ -7,13 +7,13 @@ import SidebarFiltros from './components/SidebarFiltros';
 import PoolTalentos from './components/PoolTalentos';
 import ProfileModal from './components/ProfileModal';
 import Paginacao from './components/Paginacao'; 
-import Toast from './components/Toast'; // <-- NOVO: Importar o Toast
+import Toast from './components/Toast'; 
 
 const ITEMS_PER_PAGE = 12;
 
 function App() {
   
-  // Estados (sem alteração)
+  // ... (Todos os seus estados permanecem iguais) ...
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     return savedTheme ? savedTheme : 'light';
@@ -35,75 +35,38 @@ function App() {
     const savedRecomendados = localStorage.getItem('recomendados');
     return savedRecomendados ? JSON.parse(savedRecomendados) : []; 
   });
-  
-  // --- NOVO: Estado do Toast ---
   const [toast, setToast] = useState({ message: '', isVisible: false, type: 'success' });
 
-  // --- NOVO: Função para mostrar o Toast ---
+  // ... (Todas as suas funções e useEffects permanecem iguais) ...
   const showToast = (message, type = 'success') => {
     setToast({ message, isVisible: true, type });
-    // Esconde o toast após 3 segundos
     setTimeout(() => {
       setToast({ message: '', isVisible: false, type });
     }, 3000);
   };
-
-  // --- Use Effects (sem alteração) ---
+  useEffect(() => { localStorage.setItem('theme', theme); }, [theme]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [currentPage]);
   useEffect(() => {
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-  
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [currentPage]);
-
-  useEffect(() => {
-    if (currentPage === 1) {
-      window.scrollTo({ top: 0, behavior: 'auto' });
-    } else {
-      setCurrentPage(1);
-    }
+    if (currentPage === 1) { window.scrollTo({ top: 0, behavior: 'auto' }); } 
+    else { setCurrentPage(1); }
   }, [filtros, activeTab]);
-            
-  useEffect(() => {
-    localStorage.setItem('recomendados', JSON.stringify(recomendados));
-  }, [recomendados]);
-
-  // --- Handlers (Funções de Evento) ---
-  const handleCardClick = (profile) => {
-    setSelectedProfile(profile);
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-    setSelectedProfile(null);
-  };
-
+  useEffect(() => { localStorage.setItem('recomendados', JSON.stringify(recomendados)); }, [recomendados]);
+  const handleCardClick = (profile) => { setSelectedProfile(profile); setModalOpen(true); };
+  const handleCloseModal = () => { setModalOpen(false); setSelectedProfile(null); };
   const handleFiltroChange = (e) => {
     const { name, value } = e.target;
-    setFiltros(prevFiltros => ({
-      ...prevFiltros,
-      [name]: value
-    }));
+    setFiltros(prevFiltros => ({ ...prevFiltros, [name]: value }));
   };
-
-  // --- ALTERADO: Agora é um 'toggle' (adiciona ou remove) ---
   const handleToggleRecommend = (profile) => {
     setRecomendados((prevRecomendados) => {
-      // Se já está recomendado, remove
       if (prevRecomendados.includes(profile.id)) {
-        showToast(`${profile.nome} foi removido das recomendações.`, 'info'); // <-- NOVO: Chama o toast
-        return prevRecomendados.filter(id => id !== profile.id); // Remove
+        showToast(`${profile.nome} foi removido das recomendações.`, 'info'); 
+        return prevRecomendados.filter(id => id !== profile.id); 
       }
-      
-      // Se não está, adiciona
-      showToast(`${profile.nome} foi recomendado!`, 'success'); // <-- NOVO: Chama o toast
-      return [...prevRecomendados, profile.id]; // Adiciona
+      showToast(`${profile.nome} foi recomendado!`, 'success'); 
+      return [...prevRecomendados, profile.id]; 
     });
   };
-
-  // Lógica de Filtros Dinâmicos (sem alteração)
   const areasUnicas = [...new Set(perfis.map(p => p.area))].sort();
   const localizacoesUnicas = [...new Set(perfis.map(p => p.localizacao))].sort();
   const habilidadesTecnicasUnicas = [...new Set(perfis.flatMap(p => p.habilidadesTecnicas || []))].sort();
@@ -111,8 +74,6 @@ function App() {
   const niveisInglesUnicos = [...new Set(
     perfis.flatMap(p => (p.idiomas || []).filter(i => i.idioma === 'Inglês').map(i => i.nivel))
   )].sort();
-
-  // Lógica de Filtro (sem alteração)
   const perfisFiltrados = perfis.filter((profile) => {
     const buscaLower = filtros.busca.toLowerCase();
     const matchBusca = buscaLower === '' ||
@@ -126,16 +87,11 @@ function App() {
       (profile.softSkills && profile.softSkills.includes(filtros.softSkill));
     const matchNivelIngles = filtros.nivelIngles === '' ||
       (profile.idiomas && profile.idiomas.some(i => i.idioma === 'Inglês' && i.nivel === filtros.nivelIngles));
-
     return matchBusca && matchArea && matchLocalizacao && matchHabilidadeTecnica && matchSoftSkill && matchNivelIngles;
   });
-
-  // Lógica de Exibição (sem alteração)
   const perfisParaExibir = activeTab === 'pool'
     ? perfisFiltrados 
     : perfisFiltrados.filter(p => recomendados.includes(p.id)); 
-
-  // Lógica de Paginação (sem alteração)
   const totalPages = Math.ceil(perfisParaExibir.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
@@ -145,7 +101,6 @@ function App() {
   return (
     <div className={`min-h-screen bg-(--background) text-(--text) transition-colors duration-200`}>
       
-      {/* --- NOVO: Renderiza o Toast --- */}
       <Toast 
         message={toast.message} 
         isVisible={toast.isVisible} 
@@ -168,13 +123,14 @@ function App() {
 
         <main className="flex-1">
           
-          <h2 className="text-5xl font-black mb-2">Pool de Talentos</h2>
+          {/* --- ALTERADO: Título responsivo --- */}
+          <h2 className="text-3xl md:text-5xl font-black mb-2">Pool de Talentos</h2>
           <p className={`mb-6 text-(--text2)`}>
             Encontre os melhores profissionais para sua equipe.
           </p>
 
-          {/* Abas de Navegação (sem alteração) */}
-          <div className="mb-4 flex space-x-2 border-b-2 border-(--border-color)">
+          {/* --- ALTERADO: Adicionado 'flex-wrap' --- */}
+          <div className="mb-4 flex flex-wrap space-x-2 border-b-2 border-(--border-color)">
             <button
               onClick={() => setActiveTab('pool')}
               className={`py-3 px-4 font-medium text-lg
@@ -228,14 +184,14 @@ function App() {
         </main>
       </div>
       
-      {/* Modal (ALTERADO: Passando as novas props) */}
+      {/* Modal (sem alteração aqui) */}
       {modalOpen && (
         <ProfileModal 
           profile={selectedProfile} 
           theme={theme} 
           onClose={handleCloseModal} 
-          onToggleRecommend={handleToggleRecommend} // <-- ALTERADO: Nome da prop
-          recomendados={recomendados}           // <-- ADICIONADO: Lista de recomendados
+          onToggleRecommend={handleToggleRecommend}
+          recomendados={recomendados}
         />
       )}
     </div>

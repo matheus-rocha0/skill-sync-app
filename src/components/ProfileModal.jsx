@@ -7,43 +7,30 @@ import {
   FaUser 
 } from 'react-icons/fa';
 
-// ALTERADO: Recebendo 'onToggleRecommend' e 'recomendados'
 const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados }) => {
   const [activeTab, setActiveTab] = useState('visaoGeral');
   
-  // --- LÓGICA DO BOTÃO ---
-  
-  // Verifica se o perfil atual já está na lista
   const isRecomendado = recomendados.includes(profile.id);
-
-  // Define o estilo do botão de recomendar
   const recommendButtonClasses = isRecomendado
-    ? 'bg-green-600 hover:bg-green-700 text-white' // Estilo "Recomendado"
-    : 'bg-(--secondary) hover:bg-(--secondary)/60 text-(--text)'; // Estilo Padrão
-  
-  // Define o estilo do botão de mensagem
+    ? 'bg-green-600 hover:bg-green-700 text-white' 
+    : 'bg-(--secondary) hover:bg-(--secondary)/60 text-(--text)';
   const messageButtonClasses = theme === 'dark' 
     ? 'bg-gray-700 hover:bg-gray-600 text-gray-200' 
     : 'bg-gray-200 hover:bg-gray-300 text-gray-800';
 
-  // Handler do Botão de Mensagem (sem alteração, mas removi o alert)
   const handleMessage = () => {
-    // Ação de mensagem (ex: abrir chat)
     console.log(`Abrindo chat com ${profile.nome}`);
   };
 
   return (
-    // Overlay
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 transition-opacity duration-300"
       onClick={onClose} 
     >
-      {/* Conteúdo da Modal */}
       <div
         className={`relative w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-xl overflow-hidden flex flex-col bg-(--container)`}
         onClick={(e) => e.stopPropagation()} 
       >
-        {/* Cabeçalho */}
         <div className={`p-5 border-b border-(--border-color) flex justify-between items-center`}>
           <h2 className={`text-2xl font-bold text-(--text)`}>Detalhes do Perfil</h2>
           <button
@@ -55,11 +42,10 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
           </button>
         </div>
 
-        {/* Corpo */}
         <div className="p-6 overflow-y-auto">
           
-          {/* Sumário do Perfil */}
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+          {/* --- ALTERADO: O sumário já era responsivo (md:flex-row), mas vamos garantir o padding no mobile --- */}
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 p-1">
             <img
               src={profile.foto}
               alt={profile.nome}
@@ -70,10 +56,10 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
               <p className={`text-md text-(--text2)`}>{profile.cargo}</p>
               <p className={`text-sm text-(--text2) mt-1`}>{profile.localizacao}</p>
               
-              {/* --- BOTÕES ALTERADOS --- */}
-              <div className="mt-4 flex justify-center md:justify-start space-x-3">
+              {/* --- ALTERADO: Botões agora quebram a linha no mobile --- */}
+              <div className="mt-4 flex flex-wrap justify-center md:justify-start gap-3">
                 <button 
-                  onClick={() => onToggleRecommend(profile)} // Chama a nova função
+                  onClick={() => onToggleRecommend(profile)} 
                   className={`px-4 py-2 rounded-lg text-sm font-medium ${recommendButtonClasses} transition-colors`}
                 >
                   {isRecomendado ? 'Recomendado ✔' : 'Recomendar'} 
@@ -88,9 +74,9 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
             </div>
           </div>
 
-          {/* Abas de Navegação (sem alteração) */}
+          {/* --- ALTERADO: Abas de Navegação com 'flex-wrap' --- */}
           <div className={`mt-8 border-b border-(--border-color)`}>
-            <nav className="-mb-px flex space-x-6" aria-label="Abas">
+            <nav className="-mb-px flex flex-wrap space-x-6" aria-label="Abas">
               <button
                 onClick={() => setActiveTab('visaoGeral')}
                 className={`py-4 px-1 border-b-3 text-md ${activeTab === 'visaoGeral' ? 'border-(--accent) font-bold text-(--accent)' : 'border-transparent text-gray-500 hover:text-gray-400'}`}
@@ -118,9 +104,9 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
             </nav>
           </div>
 
-          {/* Conteúdo das Abas (sem alteração) */}
+          {/* --- Conteúdo das Abas (sem alteração) --- */}
           <div className="mt-6">
-            
+            {/* ... (o conteúdo das abas permanece o mesmo) ... */}
             {activeTab === 'visaoGeral' && (
               <div className="space-y-6">
                 <div>
@@ -232,7 +218,7 @@ const ProfileModal = ({ profile, theme, onClose, onToggleRecommend, recomendados
                 ))}
               </div>
             )}
-
+            
           </div>
         </div>
       </div>
